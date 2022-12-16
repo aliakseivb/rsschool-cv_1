@@ -19,22 +19,21 @@
 >- Algorithms
 >- SQL (MySQL)
 >- Linux
->- ---
->## __Code example__
-```
-    class Comment {
-        constructor(text) {
-            this.text = text
-            this.votesQty = 0
-        }
-        upvote() {
-            this.votesQty += 1
-        }
-    }
-
-    const firstComment = new Comment('First comment')
-```
 >---
+>## __Code example__
+> ``` 
+> class Rsschool {
+>   constructor(text) {
+>       this.text = text
+>       this.sumResume = 0
+>   } 
+>   upresume() {
+>       this.sumResume += 1
+> }
+> 
+> const firstResume = new Rsschool('Resume text')
+> ```
+> ---
 >## __Education__
 >- __University:__ Academy of the Ministry of Internal Affairs of the Republic of Belarus, master of management
 >- __Courses:__
