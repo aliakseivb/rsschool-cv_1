@@ -6,7 +6,7 @@
 >- __Email:__ alex.boronin.22@gmail.com
 >- __GitHub:__ [AlexBoronin](https://github.com/AlexBoronin)
 >- __Discord:__ Aliaksei Baronin(@AlexBoronin)
->___
+>---
 >## **About me**
 >I work well in a team, I have good communication skills, I am diligent and hardworking, and my perseverance, multiplied by the desire to learn and learn new things, will be excellent means to achieve the chosen goals.
 >___ 
@@ -21,7 +21,7 @@
 >- Linux
 >---
 >## __Code example__
-> ``` 
+>``` 
 > class Rsschool {
 >   constructor(text) {
 >       this.text = text
@@ -33,7 +33,7 @@
 > 
 > const firstResume = new Rsschool('Resume text')
 > ```
-> ---
+>---
 >## __Education__
 >- __University:__ Academy of the Ministry of Internal Affairs of the Republic of Belarus, master of management
 >- __Courses:__
