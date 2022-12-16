@@ -1,13 +1,62 @@
-# [Aliaksei Baronin](https://ie.wampi.ru/2022/12/05/Z.jpg)
+># Aliaksei Baronin   |  __rsschool-cv__
 
-- tel.: +375 (29) 782-41-71
-- email: alex.boronin.22@gmail.com
-- account Discord\* - Aliaksei Baronin(@AlexBoronin)
+>![CERTOCKA_800K3png7dc034e5d31465d2.png](https://ie.wampi.ru/2022/12/14/CERTOCKA_800K3png7dc034e5d31465d2.png)
 
-===========================================
+>![Aliaksei Baronin](https://im.wampi.ru/2022/12/14/Beginner3bf90100da6e156e.png)
 
-> - Hello. I am Alexey. I am 42 years old, I live in Minsk, I am married and have two children.\
->   Some time ago (due to certain circumstances) I had to drastically change the vector of application of efforts and revise my life goals. There is no experience as such in the IT field, but nothing can prevent a person from gaining new knowledge and experience in any field. And since the IT industry is not only rapidly developing and penetrating into all corners of our lives, but also unites people from all over the world regardless of age, gender and other qualifications, the choice has become obvious. I think that my **inherent perseverance**, multiplied by **the desire to learn** new things, and **diligence**, will help me achieve my goal - to become a worthy representative of one of the IT-professions.
-> - Python, Django, Basics of JS => _https://github.com/AlexBoronin_
-> - I am currently studying at _[GeekBrains](<https://gb.ru/>)_ - Python Developer
-> - English - A2
+>![CERTOCKA_800K1.png](https://im.wampi.ru/2022/12/14/CERTOCKA_800K1.png)
+
+>## __Contacts__
+>- __Location:__ Minsk, Belarus
+>- __Phone:__ +375 (29) 782-41-71
+>- __Email:__ alex.boronin.22@gmail.com
+>- __GitHub:__ [AlexBoronin](https://github.com/AlexBoronin)
+>- __Discord:__ Aliaksei Baronin(@AlexBoronin)
+
+>![CERTOCKA_800K1.png](https://im.wampi.ru/2022/12/14/CERTOCKA_800K1.png)
+
+>## **About me**
+>I work well in a team, I have good communication skills, I am diligent and hardworking, and my perseverance, multiplied by the desire to learn and learn new things, will be excellent means to achieve the chosen goals.
+
+>![CERTOCKA_800K1.png](https://im.wampi.ru/2022/12/14/CERTOCKA_800K1.png)
+
+>## __Skills__
+>- Python
+>- OOP
+>- HTML/CSS
+>- JavaScript (Basic)
+>- Git
+>- Algorithms
+>- SQL (MySQL)
+>- Linux
+
+>![CERTOCKA_800K1.png](https://im.wampi.ru/2022/12/14/CERTOCKA_800K1.png)
+
+>## __Code example__
+```
+    class Comment {
+        constructor(text) {
+            this.text = text
+            this.votesQty = 0
+        }
+        upvote() {
+            this.votesQty += 1
+        }
+    }
+
+    const firstComment = new Comment('First comment')
+```
+
+>![CERTOCKA_800K1.png](https://im.wampi.ru/2022/12/14/CERTOCKA_800K1.png)
+
+>## __Education__
+>- __University:__ Academy of the Ministry of Internal Affairs of the Republic of Belarus, master of management
+>- __Courses:__
+>>- [GeekBrains](https://gb.ru/) Python Developer - training is in progress
+>>- [ItLogia](https://itlogia.ru/)FE Developer - training is in progress
+>>- [RS Schools](https://rs.school/) Course «JavaScript/Front-end. Stage 0» - training is in progress
+
+>![CERTOCKA_800K1.png](https://im.wampi.ru/2022/12/14/CERTOCKA_800K1.png)
+
+>## __English__
+>>![A2c617330ee26bdcac.png](https://ie.wampi.ru/2022/12/14/A2c617330ee26bdcac.png)

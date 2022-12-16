@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- here is some code -->
-  </body>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <title>cv</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#contacts" class="item">Contacts</a></li>
+                <li class="menu-item"><a href="#about" class="item">About me</a></li>
+                <li class="menu-item"><a href="#skills" class="item">Skills</a></li>
+                <li class="menu-item"><a href="#code" class="item">Code example</a></li>
+                <li class="menu-item"><a href="#educ" class="item">Education</a></li>
+                <li class="menu-item"><a href="#language" class="item">Languages</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="container main-container">
+        <div class="section-image">
+            <section class="present">
+                <div class="name">
+                    <h1>Aliaksei Baronin</h1>
+                </div>
+                <div class="dev">
+                    <h3 class="orient">FE Developer</h3>
+                </div>
+                <div><h4 class="begin">(beginner)</h4></div>
+            </section>
+            <div><img src="./assets/img/iam_c.png" alt="Beginner"></div>
+        </div>
+        <div class="main-sections">
+            <section class="section" id="contacts">
+                <h3>Contacts</h3>
+                <div class="text">
+                    <p><span>Location:</span> Minsk, Belarus</p>
+                    <p><span>Phone:</span> +375 (29) 782-41-71</p>
+                    <p><span>Email:</span> alex.boronin.22@gmail.com</p>
+                    <p><span>GitHub:</span> <a href="https://github.com/AlexBoronin">AlexBoronin</a></p>
+                    <p><span>Discord:</span> Aliaksei Baronin (@AlexBoronin)</p>
+                </div>
+            </section>
+            <section class="section" id="about">
+                <h3>About me</h3>
+                <div class="text">
+                    <p style="text-align: justify">I work well in <span>a team</span>, I have good <span>communication skills</span>,
+                        I am <span>diligent and hardworking</span>, and my
+                        <span>perseverance, multiplied</span> by the desire to learn and learn <span>new things</span>,
+                        will be excellent means
+                        <span>to achieve</span> the chosen <span>goals</span>.</p>
+                </div>
+            </section>
+            <section class="section" id="skills">
+                <h3>Skills</h3>
+                <div class="text">
+                    <p>- Python (Basic)</p>
+                    <p>- OOP</p>
+                    <p>- HTML/CSS</p>
+                    <p>- JavaScript (Basic)</p>
+                    <p>- Git</p>
+                    <p>- Algorithms</p>
+                    <p>- SQL (MySQL)</p>
+                    <p>- Linux</p>
+                </div>
+            </section>
+            <section class="section" id="code">
+                <h3>Code example</h3>
+                <pre class="pre">
+                    <code>
+    class Comment {
+        constructor(text) {
+            this.text = text
+            this.votesQty = 0
+        }
+        upvote() {
+            this.votesQty += 1
+        }
+    }
+
+    const firstComment = new Comment('First comment')
+                    </code>
+                </pre>
+            </section>
+            <section class="section" id="educ">
+                <h3>Education</h3>
+                <div class="text">
+                    <p><span>University:</span> Academy of the Ministry of Internal Affairs of the Republic of Belarus,
+                        master of management</p>
+                    <p><span>Courses:</span></p>
+                    <p style="text-indent: 20px"><a href="https://gb.ru/">GeekBrains</a> - Python Developer (training is
+                        in progress)</p>
+                    <p style="text-indent: 20px"><a href="https://itlogia.ru/">ItLogia</a> - FE Developer (training is
+                        in progress)</p>
+                    <p style="text-indent: 20px"><a href="https://rs.school/">RS Schools</a> - Course
+                        «JavaScript/Front-end. Stage 0» (training is in progress)</p>
+                </div>
+            </section>
+            <section class="section" id="language">
+                <h3>Languages</h3>
+                <div class="text">
+                    <p>Russian - fluent</p>
+                    <p>Belarusian - fluent</p>
+                    <p>English - A2</p>
+                    <p>French - A2</p>
+                    <p>Polish - I can speak and understand</p>
+                    <p>Ukrainian - I can understand</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container footer-container">
+        <div>2022 &copy;</div>
+        <a href="https://rs.school/"><img src="assets/img/rss.png" alt=""></a>
+    </div>
+</footer>
+</body>
 </html>
