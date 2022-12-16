@@ -22,19 +22,18 @@
 >- ---
 >## __Code example__
 ```
-    class Comment {
-        constructor(text) {
-            this.text = text
-            this.votesQty = 0
+        class Comment {
+            constructor(text) {
+                this.text = text
+                this.votesQty = 0
+            }
+            upvote() {
+                this.votesQty += 1
+            }
         }
-        upvote() {
-            this.votesQty += 1
-        }
-    }
-
-    const firstComment = new Comment('First comment')
+        
+        const firstComment = new Comment('First comment') 
 ```
->---
 >## __Education__
 >- __University:__ Academy of the Ministry of Internal Affairs of the Republic of Belarus, master of management
 >- __Courses:__
