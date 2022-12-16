@@ -30,7 +30,7 @@ html {
 .header {
     border-bottom: 2px solid #343333;
     padding: 25px 0;
-    background-color: grey;
+    background-color: #a9a7a7;
 }
 
 .container {
@@ -171,7 +171,7 @@ span {
 .footer {
     border-bottom: 2px solid #343333;
     padding: 25px 0;
-    background-color: grey;
+    background-color: #a9a7a7;
 }
 
 .footer-container {
