@@ -411,6 +411,7 @@ textarea {
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -423,17 +424,17 @@ body {
     font-size: 16px;
     line-height: 1.2;
     font-weight: normal;
-    color: #102746;
     max-width: 1440px;
     margin: 0 auto;
+    color: #EDF2EC;
 }
 
 header {
-    background-color: #EDF2EC;
+    background: #EDF2EC;
 }
 
 .wrap-content {
-    max-width: 1220px;
+    max-width: 1222px;
     margin: 0 auto;
 }
 
@@ -503,7 +504,7 @@ header {
     opacity: .60;
 }
 
-.main-section-grow {
+.welcome {
     background-color: #EDF2EC;
 }
 
@@ -606,7 +607,7 @@ h1 span {
     color: #636060;
 }
 
-.space-cart {
+.service {
     background: #EDF2EC;
 }
 
@@ -661,7 +662,7 @@ button.planting {
 .image-space {
     text-align: center;
     margin-left: 109px;
-    max-width: 1220px;
+    max-width: 1222px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -680,12 +681,15 @@ button.planting {
 .cart-link {
     margin-bottom: 55px;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .cart-link:hover {
     transform: scale(1.05, 1.05);
     background-color: #EDF2EC;
-    transition: .9s;
+    box-shadow: 10px 15px 10px rgba(97, 134, 76, 0.25);
+    transition: .8s;
+
 }
 
 h4 {
@@ -708,14 +712,14 @@ figcaption p {
     margin-bottom: 36px;
 }
 
-.price {
+.prices {
     background-color: #FFFFFF;
 }
 
 .price-dash {
     margin: 40px 109px 115px;
     display: inline-flex;
-    max-width: 1220px;
+    max-width: 1222px;
     justify-content: space-between;
 }
 
@@ -766,7 +770,7 @@ figcaption p {
     align-items: end;
 }
 
-.contact_us h2 {
+.contact_us h3 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -777,7 +781,7 @@ figcaption p {
     margin-bottom: 38px;
 }
 
-.contact_us h2 span {
+.contact_us h3 span {
     color: #499A18;
 }
 
@@ -796,7 +800,7 @@ figcaption p {
     margin-bottom: 39px;
 }
 
-.contact-section {
+.contacts {
     background: #EDF2EC;
     display: flex;
     flex-wrap: wrap;
@@ -806,7 +810,7 @@ figcaption p {
     margin: 53px 0 0 109px;
 }
 
-.contact-section h2 {
+.contacts h2 {
     margin: 60px 64px 439px 113px;
     font-family: 'Inika';
     font-style: normal;
@@ -895,6 +899,46 @@ figcaption p {
     margin-right: 20px;
 }
 
-.nav-list-item:last-child {
-    margin-right: 0;
+.button-learn:hover {
+    background: white;
+    transition: .9s;
+}
+
+.garden:hover,
+/*.garden span:hover,*/
+.lawn:hover,
+/*.lawn span:hover,*/
+.planting:hover
+/*.planting span:hover */
+{
+    color: white;
+    background: #b4de9c;
+    border-color: #b4de9c;
+    box-shadow: 10px 15px 10px rgba(42, 40, 40, 0.25);;
+    transition: .8s;
+}
+
+
+
+.button-basic:hover,
+.button-standart:hover,
+.button-care:hover{
+    opacity: .80;
+    color: #40a10c;
+    transition: .5s;
+}
+
+.button_us:hover {
+    background: #E06733;
+    color: #afe592;
+    transition: .5s;
+}
+
+.inst:hover,
+.face:hover,
+.twit:hover,
+.pint:hover{
+    transform: scale(1.4, 1.4);
+    background-color: white;
+    transition: .7s;
 }
