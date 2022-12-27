@@ -833,11 +833,68 @@ figcaption p {
     align-items: center;
 }
 
-.place p {
+.place span {
     margin-left: 20px;
 }
 
-.accord {
-
+.button_place button .accord {
     margin-left: 339px;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-start{
+    padding: 40px 0 40px 109px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+.copy {
+    margin-right: 20px;
+}
+
+.footer-start a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #000000;
+}
+.footer-center {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.footer-center a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-end {
+    margin-top: 49px;
+    margin-right: 109px;
+}
+
+.link-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link-list-item {
+    margin-right: 20px;
+}
+
+.nav-list-item:last-child {
+    margin-right: 0;
 }
