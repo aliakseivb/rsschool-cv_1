@@ -866,6 +866,8 @@ figcaption p {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .footer-start{
@@ -916,8 +918,9 @@ figcaption p {
 }
 
 .button-learn:hover {
-    background: white;
-    transition: .9s;
+    background: #E06733;
+    color: #ffffff;
+    transition: .5s;
 }
 
 .garden:hover,
