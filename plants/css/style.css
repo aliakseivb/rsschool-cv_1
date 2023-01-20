@@ -410,16 +410,16 @@ textarea {
 }
 
 html {
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-*, *::before, *::after {
+* {
     box-sizing: inherit;
     margin: 0;
 }
 
 body {
+    box-sizing: border-box;
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
@@ -437,7 +437,6 @@ header,
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    /* display: flex; */
 }
 
 .header-container {
@@ -515,6 +514,7 @@ header,
 
 .grow-plant {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 62px 109px;
@@ -529,9 +529,8 @@ header,
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-width: 547px;
-    width: 100%;
-    padding-left: 20px;
+    max-width: 549px;
+    padding-left: 12px;
 }
 
 h1 {
@@ -577,10 +576,16 @@ h1 span {
     color: #000000;
 }
 
+.button-learn:hover {
+    background: #E06733;
+    color: #ffffff;
+    transition: .5s;
+}
+
 .we-are {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about {
@@ -651,7 +656,7 @@ h1 span {
     margin-left: 142px;
     display: flex;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
+     flex-wrap: wrap;
 }
 
 .garden,
@@ -672,6 +677,16 @@ button.planting {
     text-align: center;
     border: 1px solid #E06733;
     border-radius: 5px;
+}
+
+.garden:hover,
+.lawn:hover,
+.planting:hover {
+    color: white;
+    background: #b4de9c;
+    border-color: #b4de9c;
+    box-shadow: 10px 15px 10px rgba(42, 40, 40, 0.25);;
+    transition: .8s;
 }
 
 .image-space {
@@ -741,6 +756,7 @@ figcaption p {
     padding: 40px 109px 115px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .price-form {
@@ -798,15 +814,11 @@ figcaption p {
     display: none;
 }
 
-.price-button-form button:last-child {
-    margin-bottom: 0;
-}
-
 .item-more {
     display: none;
 }
 
-.more-opened {
+.item-more-opened {
     display: flex;
     flex-direction: column;
     margin: -6px 50px 12px 30px;
@@ -869,10 +881,6 @@ figcaption p {
 }
 
 
-
-
-
-
 .contact_us {
     max-width: 455px;
     width: 100%;
@@ -912,54 +920,180 @@ figcaption p {
     background-color: transparent;
 }
 
-.contacts_block {
+.button_us:hover {
+    background: #E06733;
+    color: #ffffff;
+    transition: .5s;
+}
+
+/* Section prices styles end*/
+
+
+/* Section contacts styles start*/
+
+.contacts-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 53px 109px 0;
 }
 
 .woman {
     max-width: 400px;
-    margin-right: 45px;
+    margin-right: 113px;
 }
 
-.contacts_block h2 {
-    font-family: 'Inika';
+.contacts-container h2 {
+    font-family: 'Inika', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    line-height: 52px;
     color: #499A18;
-    margin-top: 8px;
-    text-align: left;
+    padding-top: 7px;
+    margin-left: 0;
+    margin-right: 64px;
 }
 
-.place {
-    background: #D6E7D2;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+.contact-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 450px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    margin-top: 95px;
+    /* margin-left: 64px; */
+    background-color: #D6E7D2;
+}
+
+.contact-title {
+    max-width: 450px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    padding: 5px 35px 5px 20px;
+    background-color: #D6E7D2;
     font-family: 'Inter';
+    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 0.05em;
     color: #717171;
-    border: none;
-    margin-top: 95px;
+    color: #717171;
+    background: url("../images/svg/accordion_btn_black.svg") no-repeat top 17px right 35px;
+}
+
+.contact-title:hover, .contact-title:active{
+    background-color: #C1E698;
+}
+
+.contact-title:active {
+    background-color: #C1E698;
+    background: url("../images/svg/accordion_btn_rev_black.svg") no-repeat top 17px right 35px;
+}
+
+.contact-list {
+    font-size: 0;
+    display: none;
+    flex-direction: column;
+    color: #717171;
+    padding: 18px 206px 31px 20px;
+}
+
+.contact-list li {
+    margin-bottom: 6px;
+    width: 380px;
+    border-bottom: 1px solid #D9D9D9;
+    font-family: 'Inter';
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 9px;
+    padding-left: 6px;
+}
+
+.contact-list li:last-child {
+    margin-bottom: 0;
+}
+
+.contact-list li:hover {
+    border-bottom: 1px solid #717171;
+    cursor: pointer;
+}
+
+.city-options {
+    display: none;
+    flex-direction: column;
+    margin-top: 47px;
+    box-sizing: border-box;
+    max-width: 448px;
+    width: 100%;
+    background: #EDF2EC;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 17px 76px 32px 33px;
+}
+
+.city-options-active {
+    display: flex;
+}
+
+.city-card {
+    display: flex;
+}
+
+.city-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-right: 15px;
+}
+
+.city-info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+}
+
+.city-button {
+    border-radius: 5px;
+    border: 1px solid #E06733;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
     text-align: center;
-
-
-}
-
-.place span {
-    margin-left: 20px;
-}
-
-.select_place button .accord {
-    margin-left: 339px;
+    color: #717171;
+    padding: 7px 29px;
+    max-width: 122px;
+    width: 100%;
+    margin-left: 38%;
+    margin-top: 24px;
+    cursor: pointer;
 }
 
 
+
+
+
+
+
+
+
+
+
+/*Footer styles start*/
 .container-footer {
     display: flex;
     flex-wrap: wrap;
@@ -1018,26 +1152,8 @@ figcaption p {
     margin-right: 20px;
 }
 
-.button-learn:hover {
-    background: #E06733;
-    color: #ffffff;
-    transition: .5s;
-}
-
-.garden:hover,
-.lawn:hover,
-.planting:hover {
-    color: white;
-    background: #b4de9c;
-    border-color: #b4de9c;
-    box-shadow: 10px 15px 10px rgba(42, 40, 40, 0.25);;
-    transition: .8s;
-}
-
-.button_us:hover {
-    background: #E06733;
-    color: #ffffff;
-    transition: .5s;
+.link-list-item:last-child {
+    margin-right: 0;
 }
 
 .inst:hover,
@@ -1048,3 +1164,5 @@ figcaption p {
     background-color: white;
     transition: .7s;
 }
+
+/* Footer styles end*/
