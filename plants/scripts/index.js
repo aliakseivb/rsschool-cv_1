@@ -113,13 +113,70 @@ document.getElementById('order3').onclick = function () {
     countPrice = 1;
 }
 
-let countContact = 1;
 
 document.getElementById('contact-title').onclick = function () {
+    document.getElementById('main-title').innerText = 'City'
     if (document.getElementById('contact-list').style.display !== 'flex') {
         document.getElementById('contact-list').style.display = 'flex';
+        document.getElementById('contact-title').style.background = '#C1E698';
+        document.getElementById('city-accord2').style.display = 'initial';
+        document.getElementById('city-accord1').style.display = 'none';
+        document.getElementById('canandaigua').style.display = 'none';
+        document.getElementById('nyc').style.display = 'none';
+        document.getElementById('yonkers').style.display = 'none';
+        document.getElementById('sherrill').style.display = 'none';
     }else{
         document.getElementById('contact-list').style.display = 'none';
+        document.getElementById('contact-title').style.background = '#D6E7D2';
+        document.getElementById('city-accord2').style.display = 'none';
+        document.getElementById('city-accord1').style.display = 'initial';
     }
 }
 
+document.getElementById('item1').onclick = function () {
+    document.getElementById('contact-list').style.display = 'none';
+    document.getElementById('canandaigua').style.display = 'flex';
+    document.getElementById('main-title').innerText = document.getElementById('item1').innerText
+}
+
+document.getElementById('item2').onclick = function () {
+    document.getElementById('contact-list').style.display = 'none';
+    document.getElementById('nyc').style.display = 'flex';
+    document.getElementById('main-title').innerText = document.getElementById('item2').innerText
+}
+
+document.getElementById('item3').onclick = function () {
+    document.getElementById('contact-list').style.display = 'none';
+    document.getElementById('yonkers').style.display = 'flex';
+    document.getElementById('main-title').innerText = document.getElementById('item3').innerText
+}
+
+document.getElementById('item4').onclick = function () {
+    document.getElementById('contact-list').style.display = 'none';
+    document.getElementById('sherrill').style.display = 'flex';
+    document.getElementById('main-title').innerText = document.getElementById('item4').innerText
+}
+
+document.getElementById('b1').onclick = function () {
+    document.getElementById('canandaigua').style.display = 'none';
+    document.getElementById('city-accord2').style.display = 'none';
+    document.getElementById('city-accord1').style.display = 'initial';
+}
+
+document.getElementById('b2').onclick = function () {
+    document.getElementById('nyc').style.display = 'none';
+    document.getElementById('city-accord2').style.display = 'none';
+    document.getElementById('city-accord1').style.display = 'initial';
+}
+
+document.getElementById('b3').onclick = function () {
+    document.getElementById('yonkers').style.display = 'none';
+    document.getElementById('city-accord2').style.display = 'none';
+    document.getElementById('city-accord1').style.display = 'initial';
+}
+
+document.getElementById('b4').onclick = function () {
+    document.getElementById('sherrill').style.display = 'none';
+    document.getElementById('city-accord2').style.display = 'none';
+    document.getElementById('city-accord1').style.display = 'initial';
+}
