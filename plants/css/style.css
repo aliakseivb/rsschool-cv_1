@@ -682,11 +682,9 @@ button.planting {
 .garden:hover,
 .lawn:hover,
 .planting:hover {
-    color: white;
-    background: #b4de9c;
-    border-color: #b4de9c;
-    box-shadow: 10px 15px 10px rgba(42, 40, 40, 0.25);;
-    transition: .8s;
+    background: #E06733;
+    color: #ffffff;
+    transition: .5s;
 }
 
 .image-space {
@@ -788,6 +786,7 @@ figcaption p {
     background: #D6E7D2;
     border-radius: 20px;
     margin-bottom: 32px;
+    cursor: pointer;
 }
 
 .price-item:last-child {
@@ -816,13 +815,13 @@ figcaption p {
 
 .item-more {
     display: none;
+    flex-direction: column;
+    margin: -6px 44px 12px 29px;
 }
 
-.item-more-opened {
-    display: flex;
-    flex-direction: column;
-    margin: -6px 50px 12px 30px;
-}
+/*.item-more-opened {*/
+/*    */
+/*}*/
 
 .line {
     content: "";
@@ -1082,15 +1081,6 @@ figcaption p {
     margin-top: 24px;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
 
 
 /*Footer styles start*/
