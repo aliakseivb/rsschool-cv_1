@@ -1290,7 +1290,7 @@ button.planting {
         display: none;
     }
 
-    .contacts .wrapper {
+    .contacts-container {
         padding: 25px 42px 0;
     }
     .woman {
@@ -1365,6 +1365,9 @@ button.planting {
         max-width: 121px;
         margin-left: 0;
         margin-top: 17px;
+    }
+    body {
+        overflow-x: hidden;
     }
 }
 
