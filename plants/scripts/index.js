@@ -1,3 +1,18 @@
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    // console.log(burgerItem);
+    const menu = document.querySelector('.header-nav');
+    const menuCloseItem = document.querySelector('.nav-close');
+    burgerItem.addEventListener('click', () => {
+        // console.log(1);
+        menu.classList.add('header-nav-active');
+    })
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove('header-nav-active');
+    });
+}())
+
+
 let countPrice = 1;
 
 document.getElementById('basic').onclick = function () {
