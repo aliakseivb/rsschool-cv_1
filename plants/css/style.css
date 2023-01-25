@@ -1132,7 +1132,7 @@ button.planting {
     .footer-start {
         padding: 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         line-height: 24px;
     }
 
@@ -1228,11 +1228,11 @@ button.planting {
     }
 
     .navbar {
-        padding: 36px 25px;
+        padding: 31px 25px;
     }
 
     .grow-plant {
-        padding: 24px 25px;
+        padding: 22px 25px;
         align-items: center;
     }
 
@@ -1248,14 +1248,14 @@ button.planting {
         font-size: 16px;
         line-height: 25px;
         width: 341px;
-        margin-bottom: 20px;
+        margin-bottom: 26px;
     }
 
     .button-learn {
         width: 100px;
         height: 34px;
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 10px;
+        line-height: 19px;
     }
 
     .img-plant {
@@ -1263,7 +1263,7 @@ button.planting {
     }
 
     .we-are {
-        padding: 30px 25px 31px;
+        padding: 30px 25px 34px;
     }
 
     .prof-title {
@@ -1271,7 +1271,7 @@ button.planting {
         font-size: 25px;
         line-height: 33px;
         text-align: center;
-        margin-bottom: 22px;
+        margin-bottom: 15px;
     }
 
     .prof-text {
@@ -1289,7 +1289,7 @@ button.planting {
     }
 
     .service .wrapper {
-        padding: 30px 25px 37px;
+        padding: 30px 25px 28px;
     }
 
     .service-place {
@@ -1301,10 +1301,13 @@ button.planting {
     .service-button h2 {
         font-size: 25px;
         line-height: 33px;
-        margin-bottom: 35px;
+        margin-bottom: 37px;
         width: 187px;
     }
 
+    .service-button {
+        margin-bottom: 33px;
+    }
     .service-choice {
         justify-content: start;
     }
@@ -1315,6 +1318,7 @@ button.planting {
         font-size: 15px;
         line-height: 20px;
         margin-right: 10px;
+        margin-bottom: 7px;
     }
 
     .image-space {
@@ -1324,7 +1328,7 @@ button.planting {
     }
 
     .cart-text p {
-        margin-bottom: 18px;
+        margin-bottom: -1px;
         width: 201px;
         align-self: center;
     }
@@ -1341,7 +1345,7 @@ button.planting {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 25px 79px 40px;
+        padding: 25px 77px 40px;
     }
 
     .price-form {
@@ -1354,12 +1358,27 @@ button.planting {
         padding: 29px 22px;
     }
     .price-form h2 {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 2px;
     }
 
     .price-item {
         margin-bottom: 14px;
         width: 180px;
+    }
+    .button-image {
+        vertical-align: middle;
+        padding-top: 3px;
+    }
+
+    .button-item-bas {
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 38px 10px 32px;
+        font-size: 15px;
+        line-height: 20px;
     }
 
     .form-desc {
@@ -1378,13 +1397,13 @@ button.planting {
         flex-direction: column;
         align-items: center;
         max-width: 296px;
-        margin-top: 19px;
+        margin-top: 22px;
     }
 
     .contact_us h3 {
         font-size: 20px;
         text-align: center;
-        margin-bottom: 14px;
+        margin-bottom: 19px;
     }
 
     .button_us {
@@ -1392,8 +1411,16 @@ button.planting {
         width: 121px;
         font-size: 15px;
         line-height: 20px;
+        padding: 7px 0;
     }
 
+    .contacts .wrapper {
+        padding: 0px 35px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .contact_us img {
         display: none;
     }
@@ -1403,15 +1430,28 @@ button.planting {
     }
     .woman {
         max-width: 100px;
+        margin-right: 4px;
     }
     .contacts-container h2 {
         margin-bottom: 0;
+        font-size: 25px;
+        line-height: 33px;
     }
     .contact-selector {
         width: 300px;
         margin-bottom: 132px;
         height: 50px;
         margin-top: 80px;
+    }
+    .contact-title {
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* max-width: 450px; */
+        /* height: 49px; */
+        /* cursor: pointer; */
+        /* outline: none; */
+        /* border: 0; */
+        padding: 0 22px 0 20px;
     }
     .footer-container {
         padding: 22px 85px 7px;
