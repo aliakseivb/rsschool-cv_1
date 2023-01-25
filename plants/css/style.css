@@ -47,8 +47,8 @@ html {
 }
 
 * {
-    box-sizing: inherit;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -213,6 +213,7 @@ h1 span {
     text-transform: uppercase;
     background-color: transparent;
     color: #000000;
+    cursor: pointer;
 }
 
 .button-learn:hover {
@@ -322,6 +323,7 @@ button.planting {
     text-align: center;
     border: 1px solid #E06733;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .garden:hover,
@@ -451,6 +453,7 @@ button.planting {
     color: #000000;
 }
 
+
 .accord-rev {
     display: none;
 }
@@ -556,6 +559,7 @@ button.planting {
     padding: 12px 0;
     margin-bottom: 39px;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .button_us:hover {
@@ -598,7 +602,7 @@ button.planting {
     justify-content: center;
     width: 450px;
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
-    margin-top: 95px;
+    margin-top: 99px;
     /* margin-left: 64px; */
     background-color: #D6E7D2;
 }
@@ -793,10 +797,23 @@ button.planting {
 
 
 /* Media start */
+
+
 /* Планшет */
 @media screen and (max-width: 769px) {
     .navbar {
-        padding: 35px 50px;
+        padding: 40px 50px;
+    }
+
+    .header-logo {
+        padding-left: 20px;
+        line-height: 39px;
+        padding-right: 15px;
+        background-position: -1px 3px;
+    }
+
+    .nav-list-item {
+        margin-right: 47px;
     }
 
     .grow-plant {
@@ -821,14 +838,18 @@ button.planting {
         line-height: 50px;
         color: #717171;
         text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
-        margin: 0 0 30px;
+        margin: 0 0 22px;
     }
 
     .grow-text-plant {
         font-size: 16px;
         line-height: 25px;
         width: 341px;
-        margin-bottom: 37px;
+        margin-bottom: 42px;
+    }
+
+    .prof-title {
+        margin-bottom: 50px;
     }
 
     .we-are {
@@ -844,7 +865,7 @@ button.planting {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 67px;
     }
 
     .prof-title {
@@ -856,16 +877,13 @@ button.planting {
 
     .prof-text {
         max-width: 668px;
-        margin-right: 0;
     }
 
     .homeplant {
         max-width: 250px;
-        margin: 0;
-    }
-
-    .homeplant img {
-        width: 100%;
+        background: url("../images/houseplant 1.png");
+        background-size: cover;
+        font-size: 0;
     }
 
     .service .wrapper {
@@ -875,7 +893,7 @@ button.planting {
     .service-button h2 {
         font-size: 35px;
         line-height: 46px;
-        margin-bottom: 40px;
+        margin-bottom: 43px;
     }
 
     .service-project {
@@ -887,13 +905,11 @@ button.planting {
 
     .service-button {
         display: flex;
-        /* justify-content: space-between; */
         flex-direction: column;
         align-items: flex-start;
-        margin-left: 0;
-        flex-wrap: wrap;
         margin-bottom: 40px;
     }
+
 
     .service-title h2 {
         font-size: 35px;
@@ -906,9 +922,24 @@ button.planting {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
+        box-sizing: border-box;
         margin-top: 0;
     }
 
+    button.garden, button.lawn, button.planting {
+        width: 161px;
+        padding: 9px 0;
+        font-size: 20px;
+        line-height: 30px;
+        color: #E06733;
+        text-align: center;
+        border: 1px solid #E06733;
+        border-radius: 5px;
+        cursor: pointer;
+        box-sizing: border-box;
+        margin-right: 38px;
+    }
     .service-place {
         padding: 0;
     }
@@ -918,22 +949,33 @@ button.planting {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-bottom: 58px;
     }
 
     .cart-link {
         max-width: 281px;
-        height: 450px;
+        /*height: 450px;*/
         margin-bottom: 38px;
         cursor: pointer;
         border-radius: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 20px;
     }
 
     .cart-link img {
         width: 280px;
         height: 350px;
     }
-
+    .cart-text {
+        display: flex;
+        flex-direction: column;
+        /*padding: 0 39px;*/
+    }
+    .cart-text h4 {
+        margin: 0;
+    }
     .cart-text p {
         font-family: 'Inter';
         font-style: normal;
@@ -942,6 +984,9 @@ button.planting {
         line-height: 20px;
         color: #717171;
         text-align: center;
+        margin-top: 11px;
+        margin-bottom: -2px;
+        padding: 0 39px;
     }
 
     .cart-link:nth-child(even) {
@@ -955,10 +1000,53 @@ button.planting {
         transition: .8s;
     }
 
+    .price-form h2 {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        color: #000000;
+        margin-bottom: 57px;
+        padding-left: 14px;
+    }
+
+    .price-item {
+        background: #D6E7D2;
+        border-radius: 20px;
+        margin-bottom: 27px;
+        cursor: pointer;
+        width: 250px;
+    }
+    .button-image{
+        vertical-align: middle;
+    }
+    .button-item-bas {
+        justify-content: space-between;
+        align-items: center;
+        padding: 17px 40px 17px;
+    }
     .price-dash {
-        padding: 40px 50px 88px;
+        padding: 40px 50px 80px;
         display: flex;
         align-items: flex-start;
+    }
+    .contact-title {
+        display: flex;
+        justify-content: space-between;
+        max-width: 450px;
+        height: 49px;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        padding: 0 35px 0 20px;
+        background-color: #D6E7D2;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        color: #717171;
+        align-items: center;
     }
 
     .contact_us {
@@ -966,7 +1054,7 @@ button.planting {
         flex-direction: column;
         align-items: flex-end;
         max-width: 296px;
-        margin-top: 105px;
+        margin-top: 100px;
     }
 
     .contact_us h3 {
@@ -974,6 +1062,7 @@ button.planting {
         font-size: 25px;
         line-height: 35px;
         text-align: right;
+        margin-bottom: 27px;
     }
 
     .contacts .wrapper {
@@ -983,10 +1072,25 @@ button.planting {
         align-items: center;
     }
 
+    .contact-list {
+        list-style: none;
+        font-size: 0;
+        display: none;
+        flex-direction: column;
+        color: #717171;
+        padding: 18px 206px 31px 20px;
+    }
+
+    .button_us {
+        padding: 12px 0;
+        margin-bottom: 30px;
+        background-color: transparent;
+        cursor: pointer;
+    }
     .woman {
         max-width: 200px;
         order: 1;
-        margin-right: 0;
+        margin-right: -19px;
     }
 
     .contacts-container {
@@ -1002,7 +1106,7 @@ button.planting {
     }
 
     .contact-selector {
-        margin-bottom: 200px;
+        margin-bottom: 250px;
     }
 
     .container-footer {
@@ -1021,6 +1125,10 @@ button.planting {
         align-items: center;
     }
 
+    .footer-start a{
+        font-size: 20px;
+        line-height: 24px;
+    }
     .footer-start {
         padding: 0;
         display: flex;
