@@ -45,12 +45,12 @@ document.getElementById('basic').onclick = function () {
 }
 
 document.getElementById('order').onclick = function () {
-    document.getElementById('basic-open').style.display = 'none';
-    document.getElementById('basic').style.background = '#EDF2EC';
-    document.getElementById('accord-rev').style.display = 'none';
-    document.getElementById('accord-ligth').style.display = 'initial';
+    // document.getElementById('basic-open').style.display = 'none';
+    // document.getElementById('basic').style.background = '#EDF2EC';
+    // document.getElementById('accord-rev').style.display = 'none';
+    // document.getElementById('accord-ligth').style.display = 'initial';
     document.getElementById('price-dash').style.paddingBottom = '115px';
-    countPrice = 1;
+    countPrice = 0;
 }
 
 
@@ -83,12 +83,12 @@ document.getElementById('standart').onclick = function () {
 }
 
 document.getElementById('order2').onclick = function () {
-    document.getElementById('standart-open').style.display = 'none';
-    document.getElementById('standart').style.background = '#EDF2EC';
-    document.getElementById('accord-rev2').style.display = 'none';
-    document.getElementById('accord-ligth2').style.display = 'initial';
+    // document.getElementById('standart-open').style.display = 'none';
+    // document.getElementById('standart').style.background = '#EDF2EC';
+    // document.getElementById('accord-rev2').style.display = 'none';
+    // document.getElementById('accord-ligth2').style.display = 'initial';
     document.getElementById('price-dash').style.paddingBottom = '115px';
-    countPrice = 1;
+    countPrice = 0;
 }
 
 document.getElementById('procare').onclick = function () {
@@ -120,12 +120,12 @@ document.getElementById('procare').onclick = function () {
 }
 
 document.getElementById('order3').onclick = function () {
-    document.getElementById('procare-open').style.display = 'none';
-    document.getElementById('procare').style.background = '#EDF2EC';
-    document.getElementById('accord-rev3').style.display = 'none';
-    document.getElementById('accord-ligth3').style.display = 'initial';
+    // document.getElementById('procare-open').style.display = 'none';
+    // document.getElementById('procare').style.background = '#EDF2EC';
+    // document.getElementById('accord-rev3').style.display = 'none';
+    // document.getElementById('accord-ligth3').style.display = 'initial';
     document.getElementById('price-dash').style.paddingBottom = '115px';
-    countPrice = 1;
+    countPrice = 0;
 }
 
 
@@ -140,7 +140,7 @@ document.getElementById('contact-title').onclick = function () {
         document.getElementById('nyc').style.display = 'none';
         document.getElementById('yonkers').style.display = 'none';
         document.getElementById('sherrill').style.display = 'none';
-    }else{
+    } else {
         document.getElementById('contact-list').style.display = 'none';
         document.getElementById('contact-title').style.background = '#D6E7D2';
         document.getElementById('city-accord2').style.display = 'none';
@@ -195,3 +195,172 @@ document.getElementById('b4').onclick = function () {
     document.getElementById('city-accord2').style.display = 'none';
     document.getElementById('city-accord1').style.display = 'initial';
 }
+
+
+
+
+document.getElementById('garden').onclick = function () {
+    if (document.getElementById('lawn').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === false
+        && document.getElementById('garden').classList.contains("btn-active") === false) {
+        document.getElementById('garden').classList.add('btn-active');
+        document.getElementById('blur3').classList.add('blur');
+        document.getElementById('blur2').classList.add('blur');
+        document.getElementById('blur4').classList.add('blur');
+        document.getElementById('blur6').classList.add('blur');
+    } else if (document.getElementById('lawn').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === false
+        && document.getElementById('garden').classList.contains("btn-active") === true) {
+        document.getElementById('garden').classList.toggle('btn-active');
+        document.getElementById('blur3').classList.remove('blur');
+        document.getElementById('blur2').classList.remove('blur');
+        document.getElementById('blur4').classList.remove('blur');
+        document.getElementById('blur6').classList.remove('blur');
+    }
+    if (document.getElementById('lawn').classList.contains("btn-active") === true
+        && document.getElementById('planting').classList.contains("btn-active") === false
+        && document.getElementById('garden').classList.contains("btn-active") === false) {
+        document.getElementById('garden').classList.add('btn-active');
+        document.getElementById('blur1').classList.remove('blur');
+        document.getElementById('blur5').classList.remove('blur');
+    } else if (document.getElementById('lawn').classList.contains("btn-active") === true
+        && document.getElementById('planting').classList.contains("btn-active") === false
+        && document.getElementById('garden').classList.contains("btn-active") === true) {
+        document.getElementById('garden').classList.remove('btn-active');
+        document.getElementById('blur1').classList.add('blur');
+        document.getElementById('blur5').classList.add('blur');
+    }
+    if (document.getElementById('lawn').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === true
+        && document.getElementById('garden').classList.contains("btn-active") === false) {
+        document.getElementById('garden').classList.add('btn-active');
+        document.getElementById('blur1').classList.remove('blur');
+        document.getElementById('blur5').classList.remove('blur');
+    } else if (document.getElementById('lawn').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === true
+        && document.getElementById('garden').classList.contains("btn-active") === true) {
+        document.getElementById('garden').classList.remove('btn-active');
+        document.getElementById('blur1').classList.add('blur');
+        document.getElementById('blur5').classList.add('blur');
+    }
+}
+
+document.getElementById('lawn').onclick = function () {
+    if (document.getElementById('garden').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === false
+        && document.getElementById('lawn').classList.contains("btn-active") === false) {
+        document.getElementById('lawn').classList.add('btn-active');
+        document.getElementById('blur1').classList.add('blur');
+        document.getElementById('blur2').classList.add('blur');
+        document.getElementById('blur4').classList.add('blur');
+        document.getElementById('blur5').classList.add('blur');
+        document.getElementById('blur6').classList.add('blur');
+    } else if (document.getElementById('garden').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === false
+        && document.getElementById('lawn').classList.contains("btn-active") === true) {
+        document.getElementById('lawn').classList.toggle('btn-active');
+        document.getElementById('blur1').classList.remove('blur');
+        document.getElementById('blur2').classList.remove('blur');
+        document.getElementById('blur4').classList.remove('blur');
+        document.getElementById('blur5').classList.remove('blur');
+        document.getElementById('blur6').classList.remove('blur');
+    }
+    if (document.getElementById('garden').classList.contains("btn-active") === true
+        && document.getElementById('planting').classList.contains("btn-active") === false
+        && document.getElementById('lawn').classList.contains("btn-active") === false) {
+        document.getElementById('lawn').classList.add('btn-active');
+        document.getElementById('blur3').classList.remove('blur');
+    } else if (document.getElementById('garden').classList.contains("btn-active") === true
+        && document.getElementById('planting').classList.contains("btn-active") === false
+        && document.getElementById('lawn').classList.contains("btn-active") === true) {
+        document.getElementById('lawn').classList.remove('btn-active');
+        document.getElementById('blur3').classList.add('blur');
+    }
+    if (document.getElementById('garden').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === true
+        && document.getElementById('lawn').classList.contains("btn-active") === false) {
+        document.getElementById('lawn').classList.add('btn-active');
+        document.getElementById('blur3').classList.remove('blur');
+    } else if (document.getElementById('garden').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === true
+        && document.getElementById('lawn').classList.contains("btn-active") === true) {
+        document.getElementById('lawn').classList.remove('btn-active');
+        document.getElementById('blur3').classList.add('blur');
+    }
+}
+// document.getElementById('lawn').onclick = function () {
+//     document.getElementById('lawn').classList.toggle('btn-active');
+//     document.getElementById('blur1').classList.add('blur');
+//     document.getElementById('blur2').classList.add('blur');
+//     document.getElementById('blur4').classList.add('blur');
+//     document.getElementById('blur5').classList.add('blur');
+//     document.getElementById('blur6').classList.add('blur');
+//     if (!document.getElementById('lawn').classList.contains("btn-active")) {
+//         document.getElementById('lawn').classList.remove('btn-active');
+//         document.getElementById('blur1').classList.remove('blur');
+//         document.getElementById('blur2').classList.remove('blur');
+//         document.getElementById('blur4').classList.remove('blur');
+//         document.getElementById('blur5').classList.remove('blur');
+//         document.getElementById('blur6').classList.remove('blur');
+//     }
+// }
+
+document.getElementById('planting').onclick = function () {
+    if (document.getElementById('garden').classList.contains("btn-active") === false
+        && document.getElementById('lawn').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === false) {
+        document.getElementById('planting').classList.add('btn-active');
+        document.getElementById('blur1').classList.add('blur');
+        document.getElementById('blur3').classList.add('blur');
+        document.getElementById('blur5').classList.add('blur');
+    } else if (document.getElementById('garden').classList.contains("btn-active") === false
+        && document.getElementById('lawn').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === true) {
+        document.getElementById('planting').classList.toggle('btn-active');
+        document.getElementById('blur1').classList.remove('blur');
+        document.getElementById('blur3').classList.remove('blur');
+        document.getElementById('blur5').classList.remove('blur');
+    }
+    if (document.getElementById('garden').classList.contains("btn-active") === true
+        && document.getElementById('lawn').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === false) {
+        document.getElementById('planting').classList.add('btn-active');
+        document.getElementById('blur2').classList.remove('blur');
+        document.getElementById('blur4').classList.remove('blur');
+        document.getElementById('blur6').classList.remove('blur');
+    } else if (document.getElementById('garden').classList.contains("btn-active") === true
+        && document.getElementById('lawn').classList.contains("btn-active") === false
+        && document.getElementById('planting').classList.contains("btn-active") === true) {
+        document.getElementById('planting').classList.remove('btn-active');
+        document.getElementById('blur2').classList.add('blur');
+        document.getElementById('blur4').classList.add('blur');
+        document.getElementById('blur6').classList.add('blur');
+    }
+    if (document.getElementById('garden').classList.contains("btn-active") === false
+        && document.getElementById('lawn').classList.contains("btn-active") === true
+        && document.getElementById('planting').classList.contains("btn-active") === false) {
+        document.getElementById('planting').classList.add('btn-active');
+        document.getElementById('blur2').classList.remove('blur');
+        document.getElementById('blur4').classList.remove('blur');
+        document.getElementById('blur6').classList.remove('blur');
+    } else if (document.getElementById('garden').classList.contains("btn-active") === false
+        && document.getElementById('lawn').classList.contains("btn-active") === true
+        && document.getElementById('planting').classList.contains("btn-active") === true) {
+        document.getElementById('planting').classList.remove('btn-active');
+        document.getElementById('blur2').classList.add('blur');
+        document.getElementById('blur4').classList.add('blur');
+        document.getElementById('blur6').classList.add('blur');
+    }
+}
+// document.getElementById('planting').onclick = function () {
+//     document.getElementById('planting').classList.toggle('btn-active');
+//     document.getElementById('blur1').classList.add('blur');
+//     document.getElementById('blur3').classList.add('blur');
+//     document.getElementById('blur5').classList.add('blur');
+//     if (!document.getElementById('planting').classList.contains("btn-active")) {
+//         document.getElementById('planting').classList.remove('btn-active');
+//         document.getElementById('blur1').classList.remove('blur');
+//         document.getElementById('blur3').classList.remove('blur');
+//         document.getElementById('blur5').classList.remove('blur');
+//     }
+// }
