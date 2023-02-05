@@ -334,6 +334,11 @@ button.planting {
     transition: .5s;
 }
 
+.cart-link-active {
+    background: #E06733;
+    color: #ffffff;
+}
+
 .image-space {
     display: flex;
     flex-wrap: wrap;
@@ -350,12 +355,20 @@ button.planting {
     border-radius: 22px;
 }
 
-.cart-link:hover {
-    transform: scale(1.05, 1.05);
-    background-color: #EDF2EC;
-    box-shadow: 10px 15px 10px rgba(97, 134, 76, 0.25);
-    transition: .8s;
+.blur1 {
+    /*background-size: cover;*/
+    /*position: fixed;*/
+    /*left: 0; right: 0; top: 0; bottom: 0;*/
+    /*-webkit-filter: blur(10px);*/
+    filter: blur(5px);
 }
+
+/*.cart-link:hover {*/
+/*    transform: scale(1.05, 1.05);*/
+/*    background-color: #EDF2EC;*/
+/*    box-shadow: 10px 15px 10px rgba(97, 134, 76, 0.25);*/
+/*    transition: .8s;*/
+/*}*/
 
 .cart-text {
     display: flex;
@@ -717,16 +730,33 @@ button.planting {
     font-style: normal;
     font-weight: 700;
     font-size: 10px;
-    line-height: 13px;
     text-align: center;
-    color: #717171;
-    padding: 7px 29px;
-    max-width: 122px;
-    width: 100%;
+    padding: 7px 0px;
+    width: 122px;
+    /*height: 26px;*/
     margin-left: 38%;
     margin-top: 24px;
     cursor: pointer;
 }
+
+.city-button-tel {
+    text-decoration: none;
+    color: #717171;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: center;
+    /*padding: 7px 29px;*/
+    /*padding: 7px 0;*/
+}
+
+.city-button:hover,
+.city-button:hover .city-button-tel{
+    background: #E06733;
+    color: #ffffff;
+    /*transition: .5s;*/
+}
+
 
 
 /*Footer styles start*/
@@ -993,12 +1023,12 @@ button.planting {
         margin-right: 0;
     }
 
-    .cart-link:hover {
-        transform: scale(1.05, 1.05);
-        background-color: #EDF2EC;
-        box-shadow: 10px 15px 10px rgba(97, 134, 76, 0.25);
-        transition: .8s;
-    }
+    /*.cart-link:hover {*/
+    /*    transform: scale(1.05, 1.05);*/
+    /*    background-color: #EDF2EC;*/
+    /*    box-shadow: 10px 15px 10px rgba(97, 134, 76, 0.25);*/
+    /*    transition: .8s;*/
+    /*}*/
 
     .price-form h2 {
         font-weight: 700;

@@ -13,6 +13,7 @@
 }())
 
 
+
 let countPrice = 1;
 
 document.getElementById('basic').onclick = function () {
@@ -45,12 +46,12 @@ document.getElementById('basic').onclick = function () {
 }
 
 document.getElementById('order').onclick = function () {
-    document.getElementById('basic-open').style.display = 'none';
-    document.getElementById('basic').style.background = '#EDF2EC';
-    document.getElementById('accord-rev').style.display = 'none';
-    document.getElementById('accord-ligth').style.display = 'initial';
+    // document.getElementById('basic-open').style.display = 'none';
+    // document.getElementById('basic').style.background = '#EDF2EC';
+    // document.getElementById('accord-rev').style.display = 'none';
+    // document.getElementById('accord-ligth').style.display = 'initial';
     document.getElementById('price-dash').style.paddingBottom = '115px';
-    countPrice = 1;
+    countPrice = 0;
 }
 
 
@@ -83,12 +84,12 @@ document.getElementById('standart').onclick = function () {
 }
 
 document.getElementById('order2').onclick = function () {
-    document.getElementById('standart-open').style.display = 'none';
-    document.getElementById('standart').style.background = '#EDF2EC';
-    document.getElementById('accord-rev2').style.display = 'none';
-    document.getElementById('accord-ligth2').style.display = 'initial';
+    // document.getElementById('standart-open').style.display = 'none';
+    // document.getElementById('standart').style.background = '#EDF2EC';
+    // document.getElementById('accord-rev2').style.display = 'none';
+    // document.getElementById('accord-ligth2').style.display = 'initial';
     document.getElementById('price-dash').style.paddingBottom = '115px';
-    countPrice = 1;
+    countPrice = 0;
 }
 
 document.getElementById('procare').onclick = function () {
@@ -120,12 +121,12 @@ document.getElementById('procare').onclick = function () {
 }
 
 document.getElementById('order3').onclick = function () {
-    document.getElementById('procare-open').style.display = 'none';
-    document.getElementById('procare').style.background = '#EDF2EC';
-    document.getElementById('accord-rev3').style.display = 'none';
-    document.getElementById('accord-ligth3').style.display = 'initial';
+    // document.getElementById('procare-open').style.display = 'none';
+    // document.getElementById('procare').style.background = '#EDF2EC';
+    // document.getElementById('accord-rev3').style.display = 'none';
+    // document.getElementById('accord-ligth3').style.display = 'initial';
     document.getElementById('price-dash').style.paddingBottom = '115px';
-    countPrice = 1;
+    countPrice = 0;
 }
 
 
@@ -195,3 +196,4 @@ document.getElementById('b4').onclick = function () {
     document.getElementById('city-accord2').style.display = 'none';
     document.getElementById('city-accord1').style.display = 'initial';
 }
+
