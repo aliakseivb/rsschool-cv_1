@@ -32,3 +32,12 @@ console.log("Вёрстка соответствует макету. Ширин�
     "Ставлю себе оценку - 67"
 )
 ;
+
+let some = 3
+
+const plus = function (link){
+    some = link + 2;
+    return some
+}
+
+console.log(plus(some));

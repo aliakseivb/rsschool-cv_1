@@ -310,9 +310,9 @@ h1 span {
     margin-right: 56px;
 }
 
-button.garden,
-button.lawn,
-button.planting {
+.garden,
+.lawn,
+.planting {
     width: 161px;
     padding: 12px 0;
     font-family: 'Inika';
@@ -331,10 +331,10 @@ button.planting {
 .planting:hover {
     background: #E06733;
     color: #ffffff;
-    transition: .5s;
+    transition: .7s;
 }
 
-.cart-link-active {
+.btn-active {
     background: #E06733;
     color: #ffffff;
 }
@@ -353,15 +353,22 @@ button.planting {
     display: inline-block;
     border: 1px solid #E3E1D5;
     border-radius: 22px;
+    transition: .7s;
 }
 
-.blur1 {
+.blur {
     /*background-size: cover;*/
     /*position: fixed;*/
     /*left: 0; right: 0; top: 0; bottom: 0;*/
     /*-webkit-filter: blur(10px);*/
     filter: blur(5px);
+    transition: .7s;
 }
+
+/*.blur-out {*/
+/*    filter: unset;*/
+/*    transition: .7s;*/
+/*}*/
 
 /*.cart-link:hover {*/
 /*    transform: scale(1.05, 1.05);*/
