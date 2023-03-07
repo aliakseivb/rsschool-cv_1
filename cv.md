@@ -16,7 +16,7 @@ ___
  - Python (basic)
  - Git
  - Linux
- ---
+---
 ## __Code example__
 ``` 
 class Rsschool {
