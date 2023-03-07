@@ -13,13 +13,8 @@
 <body>
 <header class="header">
     <div class="wrapper">
-        <div class="header-container">
-            <div class="header-logo">
-                <a href="#!" class="header-logo-link">
-                    <img src="./images/logo_vector.svg" alt="Plants" class="header-logo-pic">
-                </a>
-                <a href="#!" class="logo-link">Plants</a>
-            </div>
+        <div class="navbar">
+            <div class="header-logo">Plants</div>
             <nav class="header-nav">
                 <ul class="nav-list">
                     <li class="nav-list-item">
@@ -38,31 +33,36 @@
                         <a href="#contact" class="nav-link">Contacts</a>
                     </li>
                 </ul>
+                <div class="nav-close">
+                    <span class="nav-close-line"></span>
+                    <span class="nav-close-line"></span>
+                </div>
             </nav>
+            <div class="header-burger burger">
+                <span class="burger-line burger-line-first"></span>
+                <span class="burger-line burger-line-second"></span>
+                <span class="burger-line burger-line-third"></span>
+                <span class="burger-line burger-line-fourth"></span>
+            </div>
         </div>
     </div>
 </header>
+
 <main class="main">
     <section class="welcome" id="wlc">
         <div class="wrapper">
             <div class="grow-plant">
-                <div class="grow-plant-image">
-                    <img src="./images/leafs.png" alt="plant" class="img-plant">
-                </div>
+                <img src="./images/leafs.png" alt="plant" class="img-plant">
                 <div class="plant-prez">
-                    <div class="grow-title">
-                        <h1>We grow <span>plants</span> and give you oxygen</h1>
-                    </div>
-                    <div class="grow-text">
-                        <p class="grow-text-plant">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>
+                    <h1>We grow <span>plants</span> and give you oxygen</h1>
+                    <p class="grow-text-plant">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                     <button class="button-learn">learn more</button>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="about" id="as">
         <div class="wrapper">
             <div class="we-are">
@@ -84,111 +84,137 @@
             </div>
         </div>
     </section>
+
     <section class="service" id="serv">
         <div class="wrapper">
-            <div class="service-project">
-                <div class="service-buttton">
-                    <div class="service-title">
+            <div class="service-place">
+                <div class="service-project">
+                    <div class="service-button">
                         <h2>Service and our projects</h2>
+                        <div class="service-choice">
+                            <button class="garden" id="garden">Gardens</button>
+                            <button class="lawn" id="lawn">Lawn</button>
+                            <button class="planting" id="planting">Planting</button>
+                        </div>
                     </div>
-                    <div class="service-choice">
-                        <button class="garden"><span>Garden</span></button>
-                        <button class="lawn"><span>Lawn</span></button>
-                        <button class="planting"><span>Planting</span></button>
+                </div>
+                <div class="image-space">
+                    <div class="cart-link" id="blur1">
+                        <img src="./images/img1.png" alt="image_1">
+                        <div class="cart-text">
+                            <h4>Garden care</h4>
+                            <p>Lorem Ipsum has been the industry</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="image-space">
-                <div class="cart-link">
-                    <a href="#!">
-                        <figure class="image-space-cart">
-                            <p><img src="./images/img1.png" alt="image_1">
-                            </p>
-                            <figcaption>
-                                <h4>Garden care</h4>
-                                <p>Lorem Ipsum has been the industry</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="cart-link">
-                    <a href="#!">
-                        <figure class="image-space-cart">
-                            <p><img src="./images/img2.png" alt="image_2">
-                            </p>
-                            <figcaption>
-                                <h4>Planting</h4>
-                                <p>Lorem Ipsum has been the industry</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="cart-link">
-                    <a href="#!">
-                        <figure class="image-space-cart">
-                            <p><img src="./images/img3.png" alt="image_3">
-                            </p>
-                            <figcaption>
-                                <h4>Lawn care</h4>
-                                <p>Lorem Ipsum has been the industry</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="cart-link">
-                    <a href="#!">
-                        <figure class="image-space-cart">
-                            <p><img src="./images/img4.png" alt="image_4">
-                            </p>
-                            <figcaption>
-                                <h4>Planting</h4>
-                                <p>Lorem Ipsum has been the industry</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="cart-link">
-                    <a href="#!">
-                        <figure class="image-space-cart">
-                            <p><img src="./images/img5.png" alt="image_5">
-                            </p>
-                            <figcaption>
-                                <h4>Garden care</h4>
-                                <p>Lorem Ipsum has been the industry</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="cart-link">
-                    <a href="#!">
-                        <figure class="image-space-cart">
-                            <p><img src="./images/img6.png" alt="image_6">
-                            </p>
-                            <figcaption>
-                                <h4>Lawn care</h4>
-                                <p>Lorem Ipsum has been the industry</p>
-                            </figcaption>
-                        </figure>
-                    </a>
+                    <div class="cart-link" id="blur2">
+                        <img src="./images/img2.png" alt="image_2">
+                        <div class="cart-text">
+                            <h4>Planting</h4>
+                            <p>Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                    <div class="cart-link" id="blur3">
+                        <img src="./images/img3.png" alt="image_3">
+                        <div class="cart-text">
+                            <h4>Lawn care</h4>
+                            <p>Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                    <div class="cart-link" id="blur4">
+                        <img src="./images/img4.png" alt="image_4">
+                        <div class="cart-text">
+                            <h4>Planting</h4>
+                            <p>Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                    <div class="cart-link" id="blur5">
+                        <img src="./images/img5.png" alt="image_5">
+                        <div class="cart-text">
+                            <h4>Garden care</h4>
+                            <p>Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
+                    <div class="cart-link" id="blur6">
+                        <img src="./images/img6.png" alt="image_6">
+                        <div class="cart-text">
+                            <h4>Planting</h4>
+                            <p>Lorem Ipsum has been the industry</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="prices" id="price">
         <div class="wrapper">
-            <div class="price-dash">
+            <div class="price-dash" id="price-dash">
                 <div class="price-form">
-                    <h2>Price</h2>
-                    <div class="price-form-button">
-                        <button class="button-basic">Basic
-                            <img class="accord" src="./images/accordion_btn.png" alt="accord">
-                        </button>
-                        <button class="button-standart">Standart
-                            <img class="accord" src="./images/accordion_btn.png" alt="accord">
-                        </button>
-                        <button class="button-care">Pro care
-                            <img class="accord" src="./images/accordion_btn.png" alt="accord">
-                        </button>
+                    <h2>Prices</h2>
+                    <div class="price-buttons-form">
+                        <div class="price-item">
+                            <div class="button-item-bas" id="basic">
+                                <p class="button-basic">
+                                    Basics
+                                </p>
+                                <div class="button-image">
+                                    <img class="accord-ligth" id="accord-ligth" src="./images/svg/accordion_btn.svg"
+                                         alt="accord">
+                                    <img class="accord-rev" id="accord-rev"
+                                         src="./images/svg/accordion_btn_rev_black.svg" alt="accord">
+                                </div>
+                            </div>
+                            <div class="item-more" id="basic-open">
+                                <div class="line"></div>
+                                <p class="form-desc">Release of Letraset sheets containing Lorem Ipsum passages, and
+                                    more recently</p>
+                                <p class="count-price"><span class="orange-item">$</span><span
+                                        class="orange-item orange-price">15</span> / per hour</p>
+                                <a class="link-button-price" id="order" href="#contact">Order</a>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="button-item-bas" id="standart">
+                                <p class="button-basic">
+                                    Standard
+                                </p>
+                                <div class="button-image">
+                                    <img class="accord-ligth" id="accord-ligth2" src="./images/svg/accordion_btn.svg"
+                                         alt="accord">
+                                    <img class="accord-rev" id="accord-rev2"
+                                         src="./images/svg/accordion_btn_rev_black.svg" alt="accord">
+                                </div>
+                            </div>
+                            <div class="item-more" id="standart-open">
+                                <div class="line"></div>
+                                <p class="form-desc">Release of Letraset sheets containing Lorem Ipsum passages, and
+                                    more recently</p>
+                                <p class="count-price"><span class="orange-item">$</span><span
+                                        class="orange-item orange-price">25</span> / per hour</p>
+                                <a class="link-button-price" id="order2" href="#contact">Order</a>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="button-item-bas" id="procare">
+                                <p class="button-basic">
+                                    Pro care
+                                </p>
+                                <div class="button-image">
+                                    <img class="accord-ligth" id="accord-ligth3" src="./images/svg/accordion_btn.svg"
+                                         alt="accord">
+                                    <img class="accord-rev" id="accord-rev3"
+                                         src="./images/svg/accordion_btn_rev_black.svg" alt="accord">
+                                </div>
+                            </div>
+                            <div class="item-more" id="procare-open">
+                                <div class="line"></div>
+                                <p class="form-desc">Release of Letraset sheets containing Lorem Ipsum passages, and
+                                    more recently</p>
+                                <p class="count-price"><span class="orange-item">$</span><span
+                                        class="orange-item orange-price">25</span> / per hour</p>
+                                <a class="link-button-price" id="order3" href="#contact">Order</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contact_us">
@@ -199,34 +225,113 @@
             </div>
         </div>
     </section>
+
     <section class="contacts" id="contact">
         <div class="wrapper">
-            <div class="contacts_block">
-                <div class="woman">
-                    <img src="./images/contact_woman%201.png" alt="woman">
-                </div>
+            <div class="contacts-container">
+                <img src="./images/contact_woman%201.png" alt="woman" class="woman">
                 <h2>Contact us</h2>
-                <div class="button_place">
-                    <button class="place"><span>City</span>
-                        <img class="accord" src="./images/accordion_btn_black.png" alt="accord">
-                    </button>
+                <div class="contact-wrapper">
+                    <div class="contact-selector">
+                        <div class="contact-title" id="contact-title">
+                            <div id="main-title">
+                                City
+                            </div>
+                            <div class="image-select-city">
+                                <img class="city-accord" id="city-accord1" src="./images/svg/accordion_btn_black.svg"
+                                     alt="accord">
+                                <img class="city-accord" id="city-accord2"
+                                     src="./images/svg/accordion_btn_rev_black.svg" alt="accord">
+                            </div>
+                        </div>
+                        <ul class="contact-list" id="contact-list">
+                            <li id="item1"> Canandaigua, NY</li>
+                            <li id="item2"> New York City</li>
+                            <li id="item3"> Yonkers, NY</li>
+                            <li id="item4"> Sherrill, NY</li>
+                        </ul>
+                    </div>
+
+                    <div class="city-options Canandaigua" id="canandaigua">
+                        <div class="city-card" id="city-card1">
+                            <div class="city-text">
+                                <p>City:</p>
+                                <p>Phone:</p>
+                                <p>Office adress:</p>
+                            </div>
+                            <div class="city-info">
+                                <p>Canandaigua, NY</p>
+                                <p>+1 585 393 0001</p>
+                                <p>151 Charlotte Street</p>
+                            </div>
+                        </div>
+                        <button class="city-button" id="b1"><a href="tel:+19146780001" class="city-button-tel">Call us</a></button>
+                    </div>
+
+                    <div class="city-options NYC" id="nyc">
+                        <div class="city-card" id="city-card2">
+                            <div class="city-text">
+                                <p>City:</p>
+                                <p>Phone:</p>
+                                <p>Office adress:</p>
+                            </div>
+                            <div class="city-info">
+                                <p>New York City</p>
+                                <p>+1 212 456 0002</p>
+                                <p>9 East 91st Street</p>
+                            </div>
+                        </div>
+                        <button class="city-button" id="b2"><a href="tel:+12124560002" class="city-button-tel">Call us</a></button>
+                    </div>
+
+                    <div class="city-options Yonkers" id="yonkers">
+                        <div class="city-card" id="city-card3">
+                            <div class="city-text">
+                                <p>City:</p>
+                                <p>Phone:</p>
+                                <p>Office adress:</p>
+                            </div>
+                            <div class="city-info">
+                                <p>Yonkers, NY</p>
+                                <p>+1 914 678 0003</p>
+                                <p>511 Warburton Ave</p>
+                            </div>
+                        </div>
+                        <button class="city-button" id="b3"><a href="tel:+19146780003" class="city-button-tel">Call us</a></button>
+                    </div>
+
+                    <div class="city-options Sherrill" id="sherrill">
+                        <div class="city-card" id="city-card4">
+                            <div class="city-text">
+                                <p>City:</p>
+                                <p>Phone:</p>
+                                <p>Office adress:</p>
+                            </div>
+                            <div class="city-info">
+                                <p>Sherrill, NY</p>
+                                <p>+1 315 908 0004</p>
+                                <p>14 WEST Noyes BLVD</p>
+                            </div>
+                        </div>
+                        <button class="city-button" id="b4"><a href="tel:+13159080004" class="city-button-tel">Call us</a></button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    </div>
 </main>
+
 <footer class="footer">
-    <div class="container-footer">
-        <div class="footer-start">
-            <span class="copy">&copy;</span>
-            <span class="rights">2022</span>
-            <a href="https://github.com/AlexBoronin">github</a>
-        </div>
-        <div class="footer-center">
-            <a href="https://rs.school/js-stage0/">Rolling Scopes School</a>
-        </div>
-        <div class="footer-end">
+    <div class="wrapper">
+        <div class="footer-container">
+            <div class="footer-start">
+                <span class="copy">&copy;</span>
+                <span class="rights">2022</span>
+                <a href="https://github.com/AlexBoronin">github</a>
+            </div>
+            <div class="footer-center">
+                <a href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+            </div>
             <ul class="link-list">
                 <li class="link-list-item">
                     <a href="https://www.instagram.com/"><img class="inst" src="./images/inst%201.svg" alt="insta"></a>
@@ -241,9 +346,12 @@
                     <a href="https://www.pinterest.com/"><img class="pint" src="./images/pinterest%201.svg" alt="pinte"></a>
                 </li>
             </ul>
+
         </div>
     </div>
 </footer>
-<script src="scripts/index.js"></script>
+
+<script src="./scripts/self.js"></script>
+<script src="./scripts/index.js"></script>
 </body>
 </html>
