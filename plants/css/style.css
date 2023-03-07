@@ -362,7 +362,7 @@ h1 span {
     /*left: 0; right: 0; top: 0; bottom: 0;*/
     /*-webkit-filter: blur(10px);*/
     filter: blur(5px);
-    transition: .7s;
+    /*transition: .7s;*/
 }
 
 /*.blur-out {*/
