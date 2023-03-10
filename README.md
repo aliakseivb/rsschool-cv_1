@@ -1,3 +1,3 @@
 # rsschool-cv
-https://AlexBoronin.github.io/rsschool-cv/cv 
-https://AlexBoronin.github.io/rsschool-cv/
+https://AlexBoronin.github.io/rsschool-cv_1/cv 
+https://AlexBoronin.github.io/rsschool-cv_1/
